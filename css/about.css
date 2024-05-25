@@ -1,0 +1,85 @@
+:root{
+    --maincontainerBgColor:black;
+    --fontColor:#444;
+    --headingFontColor:#fff;
+    --hoverColor:#ee9613;
+    --bgColor:#FEA116;
+    --header:#fff;
+    --resBtn:#f5bb1a;
+    --mainHeading:6rem;
+    --aboutHeading:4rem;
+    --aboutpara:1.6rem;
+    --aboutBG:#f7f7f7;
+    --border:#44444421;
+    --counterNumber:5rem;
+    --counterPara:1.4rem;
+    --menuListFont:2rem;
+    --menuFontColor:#444444b6;
+    --FS-15:1.5rem;
+    --FS-16:1.6rem;
+    --FS-18:1.8rem;
+    --FS-20:2rem;
+    --FS-25:2.5rem;
+    --FS-30:3rem;
+    --footerBgColor:#eee;
+    --aboutParaColor:#707070;
+}
+/* About home-section */
+.bannerAbout,.bannerMenu,.bannerGallery{
+    background: url('https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')center;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slash{
+    color: #adadad;
+    font-weight: bold;
+}
+.abouthome-links a,span{
+    font-size: var(--FS-16);
+}
+.aboutHomeLink{
+    color: var(--bgColor);
+}
+/* About about-section */
+.aboutInnerTop-section{
+    flex-direction: column-reverse;
+    gap: 3rem;
+}
+.leftRes-sec,iframe{
+    width: 100%;
+}
+iframe{
+    box-shadow:0px 0px 7px 3px rgba(74,74, 74, .54) ;
+    border-radius: .5rem;
+}
+.rightAbout-sec{
+    text-align: center;
+    
+}
+.about-para{
+    border-left: none;
+}
+.aboutIntro-para{
+    line-height: 2.5rem;
+    color: var(--aboutParaColor);
+    margin-top: 1.8rem;
+}
+.sl-sty{
+    border-radius: 50%;
+    display: inline-block;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.sl-sty i{
+    font-size: var(--FS-18);
+}
+/* About chef section */
+.chefInnerBtn-sec{
+    margin: 3rem;
+}
+.aboutCounter-div{
+    margin-top: 4rem;
+}

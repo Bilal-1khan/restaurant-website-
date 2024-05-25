@@ -1,0 +1,87 @@
+:root{
+    --maincontainerBgColor:black;
+    --fontColor:#444;
+    --headingFontColor:#fff;
+    --hoverColor:#ee9613;
+    --bgColor:#FEA116;
+    --header:#fff;
+    --resBtn:#f5bb1a;
+    --mainHeading:6rem;
+    --aboutHeading:4rem;
+    --aboutpara:1.6rem;
+    --aboutBG:#f7f7f7;
+    --border:#44444421;
+    --counterNumber:5rem;
+    --counterPara:1.4rem;
+    --menuListFont:2rem;
+    --menuFontColor:#444444b6;
+    --FS-15:1.5rem;
+    --FS-16:1.6rem;
+    --FS-18:1.8rem;
+    --FS-20:2rem;
+    --FS-25:2.5rem;
+    --FS-30:3rem;
+    --footerBgColor:#eee;
+    --aboutParaColor:#707070;
+}
+
+/* menu home section */
+.leftHome-sec,.leftHome-sec,.leftHome-sec{
+    padding: 6rem 0px;
+}
+/* menu main section */
+.innerMenu-sec{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6rem;
+    border-bottom:5px dotted var(--border);
+    padding-bottom: 6rem;
+}
+.innerBtm-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: .5rem 5rem;
+}
+.menuCard-list{
+    display: flex;
+    gap: 4rem;
+}
+.leftMenu-pic,.rightMenu-pic{
+    width: 39rem;
+    border-radius: .5rem;
+}
+.leftMenu-pic img,.rightMenu-pic img,.galleryGrid-pic img{   
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow:  0px 0px 6px 1px rgba(74, 74, 74, .50);
+}
+.rightMenu-sec,.leftMenu-sec{
+    flex: 1;
+}
+.menuCard-heading{
+    font-weight: 400;
+    font-size: var(--FS-25);
+}
+.chefMenu-bottom{
+    padding: 6rem .5rem;
+    border-bottom: 5px dotted var(--border);
+}
+.cf-menu-btm{
+    display: flex;
+    justify-content: space-around;
+    padding: 6rem .5rem;
+    border-bottom: 5px dotted var(--border);
+}
+.card-para {
+    text-align:left;
+}
+.cf-mnu-price{
+    font-size: var(--FS-18);
+    color: var(--fontColor);
+}
+.dollar{
+    color: var(--bgColor);
+    font-weight: 500;
+}

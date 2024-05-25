@@ -1,0 +1,188 @@
+:root{
+    --maincontainerBgColor:black;
+    --fontColor:#444;
+    --headingFontColor:#fff;
+    --hoverColor:#ee9613;
+    --bgColor:#FEA116;
+    --header:#fff;
+    --resBtn:#f5bb1a;
+    --mainHeading:6rem;
+    --aboutHeading:4rem;
+    --aboutpara:1.6rem;
+    --aboutBG:#f7f7f7;
+    --border:#44444421;
+    --counterNumber:5rem;
+    --counterPara:1.4rem;
+    --menuListFont:2rem;
+    --menuFontColor:#444444b6;
+    --FS-14:1.4rem;
+    --FS-15:1.5rem;
+    --FS-16:1.6rem;
+    --FS-17:1.7rem;
+    --FS-18:1.8rem;
+    --FS-20:2rem;
+    --FS-25:2.5rem;
+    --FS-30:3rem;
+    --FS-50:5rem;
+    --FS-55:5.5rem;
+    --FS-60:6rem;
+    --footerBgColor:#eee;
+}
+/* contact banner */
+.bannerContact{
+    background: url('https://images.unsplash.com/photo-1520299607509-dcd935f9a839?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')center;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(20 22 26 / 82%), rgb(0 0 0 / 73%));
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+/* contact section  */
+.contactIntro-heading{
+    font-size: var(--FS-20);
+    color: var(--bgColor);
+    font-weight: 500;
+}
+.topHeading-sec,.bottomCnt-topSec{
+    text-align: center;
+}
+.contact-que-title{
+    font-weight: 500;
+    font-size: var(--aboutpara);
+    color: var(--bgColor);
+}
+.main-cntHeading{
+    margin: 1rem 0px;
+    font-size: var(--FS-50);
+    font-weight: 600;
+    color: var(--fontColor);
+}
+.cntCard-container{
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.3rem;
+    border-bottom: 5px dotted var(--border);
+}
+.cntCard-sec{
+    width: 50rem;
+}
+.cnt-card{
+    box-shadow: 0px 0px 6px 1px rgba(74, 74, 74, 0.285);
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.cntIcon{
+    padding: 1rem 0px;
+    border-bottom:2px dotted var(--border);
+}
+.cntIcon i{
+    font-size: var(--FS-60);
+    color: var(--fontColor);
+}
+.icon-cnt-h{
+    font-size: var(--FS-20);
+    font-weight: 600;
+    margin: 1.2rem 0px;
+    color: var(--fontColor);
+}
+.emailPara{
+    color: var(--fontColor);
+    font-size: var(--FS-15);
+    margin-top: 2rem;
+}
+.numpara{
+    margin-top: 2rem;
+}
+.numCnt{
+    color: var(--fontColor);
+    font-size: var(--FS-15);
+}
+.bottomContact-sec,.cntForm-sec{
+    padding: 6rem 1rem;
+}
+.cntForm-sec{
+    border-bottom: 5px dotted var(--border);
+}
+.cntForm-sec{
+    text-align: center;
+}
+.inputFlex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inp-div{
+    flex: 0 0 50%;
+    padding: 1.5rem;
+}
+.inp-div input{
+    width: 100%;
+    font-size: var(--FS-14);
+    font-weight: 500;
+    color: var(--fontColor);
+    padding: .4rem .8rem;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 6px 1px rgba(74, 74, 74, 0.285);
+    border-radius: .5rem;
+    height: 5rem;
+}
+.textBox{
+    padding: 2.5rem 1.5rem;
+    width: 100%;   
+}
+textarea{
+    resize: none;
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 6px 1px rgba(74, 74, 74, 0.285);
+    border: none;
+    padding:1.3rem 1.2rem;
+    outline: none;
+    font-size: var(--FS-14);
+    overflow: hidden;
+    font-weight: 500;
+}
+#ctn-submitBtn{
+    padding: 1rem 2rem;
+    font-size: var(--FS-15);
+    font-weight: 500;
+    color: var(--fontColor);
+    background-color: var(--bgColor);
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: all .7s ease-in-out;
+}
+#ctn-submitBtn:hover{
+    background-color: var(--hoverColor);
+    transform: scale(1.03);
+}
+#submit-result,.result{
+    font-size: var(--FS-17);
+    font-weight: 700;
+    margin: 2rem 0px;
+    text-transform: uppercase;
+    color: var(--bgColor);
+}
+.googleMap iframe{
+    width: 100%;
+}
+/* contact media query */
+@media screen and (max-width:506px) {
+    .cntCard-container,.inputFlex{
+        flex-direction: column;
+    }
+    .cntCard-sec{
+        width: 100%;
+    }
+}

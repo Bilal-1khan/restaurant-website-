@@ -1,0 +1,113 @@
+:root{
+    --maincontainerBgColor:black;
+    --fontColor:#444;
+    --headingFontColor:#fff;
+    --hoverColor:#ee9613;
+    --bgColor:#FEA116;
+    --header:#fff;
+    --resBtn:#f5bb1a;
+    --mainHeading:6rem;
+    --aboutHeading:4rem;
+    --aboutpara:1.6rem;
+    --aboutBG:#f7f7f7;
+    --border:#44444421;
+    --counterNumber:5rem;
+    --counterPara:1.4rem;
+    --menuListFont:2rem;
+    --menuFontColor:#444444b6;
+    --FS-15:1.5rem;
+    --FS-16:1.6rem;
+    --FS-18:1.8rem;
+    --FS-20:2rem;
+    --FS-25:2.5rem;
+    --FS-30:3rem;
+    --footerBgColor:#eee;
+    --aboutParaColor:#707070;
+}
+
+/* gallery meal grid section */
+.topSection{
+    text-align: center;
+    padding: 2rem 1rem 6rem 1rem;
+    border-bottom: 5px dotted var(--border);
+}
+.gal-h-center{
+    font-size: var(--FS-16);
+    color: var(--bgColor);
+    font-weight:bold;
+    letter-spacing: .1rem;
+    margin-bottom:.5rem;
+}
+.gal-main-h{
+    font-size: var(--FS-30);
+    color: var(--fontColor);
+
+}
+.topFood-section-grid{
+    padding: 6rem .2rem;
+    border-bottom: 5px dotted var(--border);
+}
+.meal-section{
+    padding: 0.5rem 2rem;    
+    font-weight: 500;
+    font-size: var(--FS-20);
+    color: var(--fontColor);
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+    gap: 4rem;
+    padding: 2rem;
+}
+.galleryGrid-pic img:hover,.galleryflex-pic img:hover{
+    cursor: pointer;
+    transition: 0.8s ease-out;
+    transform: scale(1.05);
+    opacity: .94;
+}
+.topBottom-section-grid{
+    padding: 6rem 1rem;
+}
+.flex-container{
+    display: flex;
+    gap: 1.3rem;
+}
+.galleryflex-pic img{
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow:  0px 0px 6px 1px rgba(74, 74, 74, .50);
+}
+/* popup image */
+.innerGalleryPic-sec .popupImage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:rgba(0,0,0, .9) ;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+ .popupImage span{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+}
+.popupImage img{
+    width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: .5rem;
+    object-fit: cover;
+}
+@media screen and (max-width:768px) {
+    .popupImage img{
+        width: 95%;
+    }
+}
